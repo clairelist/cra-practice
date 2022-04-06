@@ -34,9 +34,11 @@
   }
 }
 
-.nav-wrapper > a {
+.nav-wrapper > a{
   display:flex;
   flex-direction: row;
- 
+  justify-content: space-around;
+  background-color: #282c34;
   color: gold;
+  border-top: 3px solid black;
 }
