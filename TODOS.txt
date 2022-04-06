@@ -1,0 +1,11 @@
+Create a remote repository for github integraty X
+
+Seperate nav component
+--> update styles [...that, line up around bottom of page]
+
+Create a border bt header and nav in App
+--> update style [...that, app anim is smaller]
+
+Route to User, Post, Home components
+--> seperate Route component
+--> skeleton of User and Post

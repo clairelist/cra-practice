@@ -24,9 +24,6 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {
@@ -35,4 +32,11 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.nav-wrapper > a {
+  display:flex;
+  flex-direction: row;
+ 
+  color: gold;
 }
