@@ -1,10 +1,10 @@
 Create a remote repository for github integraty X
 
 Seperate nav component
---> update styles [...that, line up around bottom of page]
+--> update styles [...that, line up around bottom of page] X
 
-Create a border bt header and nav in App
---> update style [...that, app anim is smaller]
+Create a border bt header and nav in App x
+--> update style [...that, app anim is smaller] x
 
 Route to User, Post, Home components
 --> seperate Route component
