@@ -1,16 +1,17 @@
-import {Route} from 'react-router-dom';
+import {Route, Routes} from 'react-router-dom';
+//HEY FUTURE CLAIRE:: THIS VERSION OF ROUTE USES THE BELOW 'ELEMENT' PATTERN RATHER THAN COMPONENTS. YEAH IT'S STUPID AND I HATE IT TOO.
 //import Home from './Home';
 import Page from './Page';
 import Post from './Post';
 
-function Routes(){
+function Routing(){
     return(
-        <div>
-        {/* <Route exact path='/home' component={Home} /> */}
-        <Route exact path='/page' component={Page} />
-        <Route exact path='/post' component={Post} />
-        </div>
+        <Routes>
+        {/* <Route exact path='/home' element={<Home /> } /> */}
+        <Route exact path='/user' element={<Page /> } />
+        <Route exact path='/post' element={<Post /> } />
+        </Routes>
     )
 }
 
-export default Routes;
+export default Routing;
