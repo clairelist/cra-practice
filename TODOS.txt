@@ -7,5 +7,5 @@ Create a border bt header and nav in App x
 --> update style [...that, app anim is smaller] x
 
 Route to User, Post, Home components
---> seperate Route component
---> skeleton of User and Post
+--> seperate Route component X
+--> skeleton of User and Post x -user
