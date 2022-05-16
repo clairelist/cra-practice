@@ -10,4 +10,6 @@ Route to User, Post, Home components
 --> seperate Route component X
 --> skeleton of User and Post x -user -post
 
-Add Ant Design stuff
+Add Ant Design stuff ?
+
+Make Post component fully
