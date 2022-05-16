@@ -8,4 +8,6 @@ Create a border bt header and nav in App x
 
 Route to User, Post, Home components
 --> seperate Route component X
---> skeleton of User and Post x -user
+--> skeleton of User and Post x -user -post
+
+Add Ant Design stuff
