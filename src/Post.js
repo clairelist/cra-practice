@@ -1,15 +1,19 @@
 import {useState} from 'react';
 
 const defaultPost = {
-    title : '',
+    title: '',
     content: ''
 }; 
 
 function Post(){
-    const [post, setPost] = useState(defaultPost);
+    const [post, setPost] = useState(defaultPost); //...we will POST post data from here later ! So we can persist in everyone's favorite -- the database woooo
 
-    const handleChange = (args) =>{
-        setPost(args);
+    const handleChange = (event) =>{
+        setPost({value: event.target.value});
+    }
+
+    const handleSubmit = (event) =>{
+        event.preventDefault();
     }
     return(
         <div>
