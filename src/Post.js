@@ -1,5 +1,7 @@
 import {useState} from 'react';
 
+import './Post.css';
+
 const defaultPost = {
     title: '',
     content: ''
@@ -25,7 +27,7 @@ function Post(){
         </label>
 
         <label>
-        <input type="textarea" name="content" />
+        <input type="textarea" name="content" rows={200} cols={25} />
         </label>
         
 </form>
