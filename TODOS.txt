@@ -13,3 +13,4 @@ Route to User, Post, Home components
 Add Ant Design stuff ?
 
 Make Post component fully
+--> FIX component being uncontrolled!
