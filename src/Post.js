@@ -16,17 +16,19 @@ function Post(){
 
     const handleSubmit = (event) =>{ //call!
         event.preventDefault();
-        setPost(event.post); //this is not correct LOL
+        setPost(event.target.value); //this is not correct LOL
     }
     return(
         <div>
             <h2>POST component!</h2>
 <form className='text-input'>
         <label>
-        Title _
+        Title {'->'}
         <input 
         type="text" 
         name="title" 
+        value={post.title}
+        onChange={handleChange}
          />
         </label>
 
@@ -43,9 +45,10 @@ function Post(){
         />
         </label> */}
 
-        <textarea placeholder={'post some nonsense!'}></textarea>
+        <textarea placeholder={'post some nonsense!'} value={post.content} onChange={handleChange}></textarea>
         
 </form>
+        <button onClick={handleSubmit}>Click ME to POST!</button>
         <h2>{post.title}</h2>
         <p>{post.content}</p>
         </div>
