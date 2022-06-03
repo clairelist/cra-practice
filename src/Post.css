@@ -1,6 +1,18 @@
 /* THESE ARE THE STYLES FOR THE POST COMPONENT */
-
+/* 
 textarea {
     width: auto;
     min-height: auto;
+} */
+
+form {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.text-input > textarea {
+    width: 500px;
+    height: 50px;
 }
