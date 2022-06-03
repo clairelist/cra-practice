@@ -27,8 +27,8 @@ function Post(){
         <input 
         type="text" 
         name="title" 
-        value={post.title}
-        onChange={handleChange}
+        // value={post.title}
+        // onChange={handleChange}
          />
         </label>
 
@@ -45,10 +45,22 @@ function Post(){
         />
         </label> */}
 
-        <textarea placeholder={'post some nonsense!'} value={post.content} onChange={handleChange}></textarea>
+        <textarea 
+        placeholder={'post some nonsense!'} 
+        //  value={defaultPost} 
+        //  onChange={handleChange}
+         >
+
+        </textarea>
         
 </form>
-        <button onClick={handleSubmit}>Click ME to POST!</button>
+        <input
+        type='submit'
+        value='Post'
+        onClick={handleSubmit}
+        >
+
+        </input>
         <h2>{post.title}</h2>
         <p>{post.content}</p>
         </div>
