@@ -14,3 +14,7 @@ Add Ant Design stuff ?
 
 Make Post component fully
 --> FIX component being uncontrolled!
+
+Mock API calls for posts!
+--install uuid
+--flesh out POST and GET mock calls
