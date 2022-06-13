@@ -10,20 +10,22 @@ const defaultPost = {
 function Post(){
     const [post, setPost] = useState(defaultPost); //...we will POST post data from here later ! So we can persist in everyone's favorite -- the database woooo
 
+    const [posts, setPosts] = useState([post]);
+
     const handleChange = (event) =>{
         setPost({...post, [event.target.name]: event.target.value});
         //we MUST both have the whole post object, AND destructure the target name
         //and set it to the target VALUE. This will ensure control (1 other thing needed schon jetzt)
     }
 
-    const handleSubmit = (event) =>{ //let's fix up SUBMIT handler now...
+    const handleSubmit = (event) =>{ //missing a piece. Waiting...
         event.preventDefault();
-        setPost(event.target.value); //this is not correct LOL
+        setPosts([...posts, post]);
     }
     return(
         <div>
             <h2>POST component!</h2>
-<form className='text-input'>
+<form className='text-input' onSubmit={handleSubmit}>
         <label>
         Title {'->'}
         <input 

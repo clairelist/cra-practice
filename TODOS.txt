@@ -15,6 +15,7 @@ Add Ant Design stuff ?
 Make Post component fully
 --> FIX component being uncontrolled! x
 --> FIX submit handler !
+(read up on docs on CSS forms!)
 
 Mock API calls for posts!
 --install uuid x
