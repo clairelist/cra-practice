@@ -15,7 +15,7 @@ Make Post component fully
 --> FIX submit handler ! X
 (read up on docs on CSS forms!)
 --> STYLE post component fully!
---> fix up default values >> placeholder=
+--> fix up default values >> placeholder= X
 
 Mock API calls for posts!
 --install uuid x

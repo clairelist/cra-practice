@@ -3,14 +3,14 @@ import {useState} from 'react';
 import './Post.css';
 
 const defaultPost = {
-    title: 'DEFAULT TITLE!',
-    content: 'DEFAULT CONTENT!'
+    title: '',
+    content: ''
 }; 
 
 function Post(){
     const [post, setPost] = useState(defaultPost); //...we will POST post data from here later ! So we can persist in everyone's favorite -- the database woooo
 
-    const [posts, setPosts] = useState([defaultPost]); //track .
+    const [posts, setPosts] = useState([defaultPost]);
 
     const handleChange = (event) =>{
         setPost({...post, [event.target.name]: event.target.value});
@@ -31,6 +31,7 @@ function Post(){
         <input 
         type="text" 
         name="title" 
+        placeholder="TITLE your inane babbling"
         value={post.title}
         onChange={handleChange}
          />
@@ -41,6 +42,7 @@ function Post(){
         <input 
         type="textarea" 
         name="content" 
+        placeholder="What have you to SAY?"
         value={post.content}
         onChange={handleChange}
        

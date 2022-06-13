@@ -21,7 +21,8 @@ form {
 input[type=textarea] {
     width: 150%;
     height: 250%;
-   /* padding: 25% 20px;*/
+    /* rows: 25; */
+    columns: 250;
     margin: 8px 0;
     display: flex;
     border: 1px solid #ccc;
