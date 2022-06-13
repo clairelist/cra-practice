@@ -13,8 +13,10 @@ Route to User, Post, Home components
 Add Ant Design stuff ?
 
 Make Post component fully
---> FIX component being uncontrolled!
+--> FIX component being uncontrolled! x
+--> FIX submit handler !
 
 Mock API calls for posts!
---install uuid
---flesh out POST and GET mock calls
+--install uuid x
+--flesh out POST and GET mock calls x
+--test that we are actually getting something!

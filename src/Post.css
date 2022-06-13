@@ -12,7 +12,18 @@ form {
     flex-direction: column;
 }
 
-.text-input > textarea {
+/* .text-input > textarea {
     width: 500px;
     height: 50px;
-}
+} */
+
+/*HERE we can fuck with the input display !*/
+input[type=textarea] {
+    width: 50%;
+   /* padding: 25% 20px;*/
+    margin: 8px 0;
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }

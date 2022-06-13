@@ -11,10 +11,12 @@ function Post(){
     const [post, setPost] = useState(defaultPost); //...we will POST post data from here later ! So we can persist in everyone's favorite -- the database woooo
 
     const handleChange = (event) =>{
-        setPost(event.target.value);
+        setPost({...post, [event.target.name]: event.target.value});
+        //we MUST both have the whole post object, AND destructure the target name
+        //and set it to the target VALUE. This will ensure control (1 other thing needed schon jetzt)
     }
 
-    const handleSubmit = (event) =>{ //call!
+    const handleSubmit = (event) =>{ //let's fix up SUBMIT handler now...
         event.preventDefault();
         setPost(event.target.value); //this is not correct LOL
     }
@@ -27,31 +29,29 @@ function Post(){
         <input 
         type="text" 
         name="title" 
-        // value={post.title}
-        // onChange={handleChange}
+        value={post.title}
+        onChange={handleChange}
          />
         </label>
 
-        {/* <label>
+        <label>
             Content _
         <input 
         type="textarea" 
-        name="textarea" 
-        rows={200} 
-        cols={25} 
-        value={post}
+        name="content" 
+        value={post.content}
         onChange={handleChange}
        
         />
-        </label> */}
+        </label>
 
-        <textarea 
+        {/* <textarea 
         placeholder={'post some nonsense!'} 
-        //  value={defaultPost} 
-        //  onChange={handleChange}
+        value={defaultPost} 
+        onChange={handleChange}
          >
 
-        </textarea>
+        </textarea> */}
         
 </form>
         <input
