@@ -11,10 +11,9 @@ Route to User, Post, Home components
 --> skeleton of User and Post x -user -post
 
 Make Post component fully
+--> STYLE post component fully! INSTALLED ANTD AFTER ALL
 --> FIX component being uncontrolled! x
 --> FIX submit handler ! X
-(read up on docs on CSS forms!)
---> STYLE post component fully!
 --> fix up default values >> placeholder= X
 
 Mock API calls for posts!
