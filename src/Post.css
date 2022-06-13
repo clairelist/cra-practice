@@ -17,15 +17,13 @@ form {
     height: 50px;
 } */
 
-/*HERE we can fuck with the input display !*/
+/*SCREW this I am gonna go with ANT DESIGN*/
 input[type=textarea] {
-    width: 150%;
-    height: 250%;
-    /* rows: 25; */
-    columns: 250;
-    margin: 8px 0;
+    /* margin: 250% 150%; */
+    
+    /* margin: 8px 0; */
     display: flex;
-    border: 1px solid #ccc;
+    border: 1px solid white;
     border-radius: 4px;
     box-sizing: border-box;
   }

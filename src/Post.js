@@ -38,7 +38,7 @@ function Post(){
         </label>
 
         <label>
-            Content _
+            Content {'->'}
         <input 
         type="textarea" 
         name="content" 
