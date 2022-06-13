@@ -10,12 +10,12 @@ Route to User, Post, Home components
 --> seperate Route component X
 --> skeleton of User and Post x -user -post
 
-Add Ant Design stuff ?
-
 Make Post component fully
 --> FIX component being uncontrolled! x
---> FIX submit handler !
+--> FIX submit handler ! X
 (read up on docs on CSS forms!)
+--> STYLE post component fully!
+--> fix up default values >> placeholder=
 
 Mock API calls for posts!
 --install uuid x

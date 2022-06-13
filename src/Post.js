@@ -10,7 +10,7 @@ const defaultPost = {
 function Post(){
     const [post, setPost] = useState(defaultPost); //...we will POST post data from here later ! So we can persist in everyone's favorite -- the database woooo
 
-    const [posts, setPosts] = useState([post]);
+    const [posts, setPosts] = useState([defaultPost]); //track .
 
     const handleChange = (event) =>{
         setPost({...post, [event.target.name]: event.target.value});
@@ -18,7 +18,7 @@ function Post(){
         //and set it to the target VALUE. This will ensure control (1 other thing needed schon jetzt)
     }
 
-    const handleSubmit = (event) =>{ //missing a piece. Waiting...
+    const handleSubmit = (event) =>{ 
         event.preventDefault();
         setPosts([...posts, post]);
     }
@@ -63,10 +63,18 @@ function Post(){
         >
 
         </input>
+       
+{/*remember to MAP OVER ALL POSTS, SO THAT WE CAN ACTUALLY DISPLAY THEM::*/}
+{posts.map((post, idx) => (
+    <div className='post-reader' key={idx}>
         <h2>{post.title}</h2>
         <p>{post.content}</p>
-        </div>
+    </div>
+))}
+ </div>
+
     )
 }
 
 export default Post;
+

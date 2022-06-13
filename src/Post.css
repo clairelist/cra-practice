@@ -19,7 +19,8 @@ form {
 
 /*HERE we can fuck with the input display !*/
 input[type=textarea] {
-    width: 50%;
+    width: 150%;
+    height: 250%;
    /* padding: 25% 20px;*/
     margin: 8px 0;
     display: flex;
