@@ -1,5 +1,7 @@
 import {useState} from 'react';
 
+import {Input, Form} from 'antd'; //--> THESE will give us access to antd input and form styling. See UD proj for example implementation !
+import "antd/dist/antd.css";
 import './Post.css';
 
 const defaultPost = {
