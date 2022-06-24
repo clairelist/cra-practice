@@ -11,7 +11,7 @@ const initPosts = [
 //simulating a GET & POST requests; will use Promise.resolve(object)
 
 export const axios = {
-    get() {
+    get(url) {
       return Promise.resolve({ status: 200, success: true, data: initPosts })
     },
     post(url, { title, content }) {

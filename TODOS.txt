@@ -16,6 +16,7 @@ Make Post component fully
 --> FIX component being uncontrolled! x
 --> FIX submit handler ! X
 --> fix up default values >> placeholder= X
+--> Persist posts in state! (have a Posts viewing component that on mount fetches all posts; be sure to POST post to our mock api)
 
 Mock API calls for posts!
 --install uuid x

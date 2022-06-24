@@ -1,6 +1,7 @@
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
+import {axios} from './api/mocks';
 
-import {Input, Form} from 'antd'; //--> THESE will give us access to antd input and form styling. See UD proj for example implementation !
+//import {Input, Form} from 'antd'; //--> THESE will give us access to antd input and form styling. See UD proj for example implementation !
 import "antd/dist/antd.css";
 import './Post.css';
 
@@ -23,7 +24,19 @@ function Post(){
     const handleSubmit = (event) =>{ 
         event.preventDefault();
         setPosts([...posts, post]);
+        axios.post('url',{post});
     }
+
+    //I NEED TO SET UP A ROUTE OF /posts or something, to set the URLs to in these axios calls!
+    useEffect(()=>{
+        axios.get('url')
+        .then(res=>{
+            setPosts(res.data)
+        }).catch(err=>{
+            console.error(err);
+        });
+    },[]);
+
     return(
         <div>
             <h2>POST component!</h2>
